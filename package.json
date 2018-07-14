@@ -6,8 +6,8 @@
   "scripts": {
     "test": "npm run lint && babel-node ./src/lib/tests",
     "babel": "babel src --out-dir build --source-maps",
-    "build": "webpack --progress --mode development",
-    "build-production": "webpack --progress --mode production",
+    "build": "npm run babel && webpack --progress --mode development",
+    "build-production": "npm run babel && webpack --progress --mode production",
     "release": "npm run test && npm run build-production && npm version prerelease && npm publish",
     "lint": "eslint ./src/"
   },

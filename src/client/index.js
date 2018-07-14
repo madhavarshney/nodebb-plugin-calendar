@@ -88,14 +88,14 @@ try {
   if (momentLang === 'en-us') {
     begin('en-us');
   } else {
-    require(`bundle-loader!moment/locale/${momentLang}`)(() => { // eslint-disable-line
+    require(`moment/locale/${momentLang}`)(() => { // eslint-disable-line
       moment.locale(momentLang);
       begin(momentLang);
     });
   }
 } catch (e) {
   try {
-    require(`bundle-loader!moment/locale/${momentLang.split('-')[0]}`)(() => { // eslint-disable-line
+    require(`moment/locale/${momentLang.split('-')[0]}`)(() => { // eslint-disable-line
       moment.locale(momentLang);
       begin(momentLang);
     });

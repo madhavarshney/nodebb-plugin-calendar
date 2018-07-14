@@ -61,8 +61,8 @@ export default (router, middleware) => {
 
       const style = colors.map(({ cid, bgColor }) => `
         .plugin-calendar-cal-event-category-${cid} {
-        background-color: ${bgColor};
-        border-color: ${shadeColor2(bgColor, -0.2)};
+        background-color: ${bgColor}CC !important;
+        border-color: ${shadeColor2(bgColor, -0.2)} !important;
       }`);
 
       const { eventPid: pid, eventDay: day } = req.params;

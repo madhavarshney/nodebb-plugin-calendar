@@ -12,8 +12,11 @@ const begin = (momentLang) => {
     header: {
       left: 'prev,next today',
       center: 'title',
-      right: 'month,agendaWeek,agendaDay',
+      // right: 'month,agendaWeek,agendaDay',
+      right: 'listMonth,month,agendaWeek',
     },
+    defaultView: 'listMonth',
+    themeSystem: 'bootstrap3',
     lang: momentLang,
     events: (start, end, timezone, callback) => {
       socket.emit('plugins.calendar.getEventsByDate', {
@@ -59,15 +62,15 @@ const begin = (momentLang) => {
 
     if ($calendar && !shouldHandle) {
       $calendar.fullCalendar(calendarOptions);
-      const btn = $('#plugin-calendar-cal-only-yes');
-      btn
-        .on('click', (e) => {
-          e.preventDefault();
-          $calendar.toggleClass('plugin-calendar-cal-only-yes');
-          btn.toggleClass('active');
-        })
-        .detach()
-        .appendTo($calendar.find('.fc-toolbar .fc-right'));
+      // const btn = $('#plugin-calendar-cal-only-yes');
+      // btn
+      //   .on('click', (e) => {
+      //     e.preventDefault();
+      //     $calendar.toggleClass('plugin-calendar-cal-only-yes');
+      //     btn.toggleClass('active');
+      //   })
+      //   .detach()
+      //   .appendTo($calendar.find('.fc-toolbar .fc-right'));
     }
 
     const $display = $('#plugin-calendar-cal-event-display');
@@ -117,13 +120,13 @@ try {
   if (momentLang === 'en-us') {
     begin('en-us');
   } else {
-    require(`bundle-loader!fullcalendar/dist/locale/${momentLang}`)(() => { // eslint-disable-line
+    require(`fullcalendar/dist/locale/${momentLang}`)(() => { // eslint-disable-line
       begin(momentLang);
     });
   }
 } catch (e) {
   try {
-    require(`bundle-loader!fullcalendar/dist/locale/${momentLang.split('-')[0]}`)(() => { // eslint-disable-line
+    require(`fullcalendar/dist/locale/${momentLang.split('-')[0]}`)(() => { // eslint-disable-line
       begin(momentLang);
     });
   } catch (er) {

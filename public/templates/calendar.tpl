@@ -1,7 +1,7 @@
-<button type="button" id="plugin-calendar-cal-only-yes" title="[[calendar:only_yes_long]]">[[calendar:only_yes]]</button>
+<!-- <button type="button" id="plugin-calendar-cal-only-yes" title="[[calendar:only_yes_long]]">[[calendar:only_yes]]</button> -->
 <div id="calendar"></div>
 
-<style type="text/css" class="plugin-calendar-cal-styles">{{calendarEventsStyle}}</style>
+<!-- <style type="text/css" class="plugin-calendar-cal-styles">{{calendarEventsStyle}}</style> -->
 
 <div class="modal fade <!-- IF eventData -->in<!-- ENDIF eventData -->" id="plugin-calendar-cal-event-display" tabindex="-1"
 role="dialog" aria-labelledby="plugin-calendar-cal-event-display-title">

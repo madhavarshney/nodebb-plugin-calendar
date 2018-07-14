@@ -175,3 +175,45 @@
     </div>
   </div>
 </form>
+
+      <!-- <div class="form-horizontal">
+        <div class="form-group">
+          <label class="col-sm-3 control-label" for="plugin-calendar-event-editor-location">
+            [[calendar:location]]
+          </label>
+          <div class="col-sm-9">
+            <div class="input-group">
+              <div class="input-group-addon"><i class="fa fa-location-arrow"></i></div>
+              <input type="text" class="form-control" id="plugin-calendar-event-editor-location" />
+              <p class="text-danger error-message">[[calendar:invalid_location]]</p>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-3 control-label">Noter(s)</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" title="Noters" id="plugin-calendar-event-editor-noters"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-3 control-label">Bhagavad Gitas</label>
+          <div class="col-sm-9">
+            <input type="number" class="form-control" title="Bhagavad Gitas" id="plugin-calendar-event-editor-bg"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-3 control-label">Krishna Books</label>
+          <div class="col-sm-9">
+            <input type="number" class="form-control" title="Krishna Books" id="plugin-calendar-event-editor-kb"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-3 control-label">Laxmi</label>
+          <div class="col-sm-9">
+            <div class="input-group">
+              <div class="input-group-addon">$</div>
+              <input type="number" class="form-control" title="Laxmi" id="plugin-calendar-event-editor-laxmi"/>
+            </div>
+          </div>
+        </div>
+      </div> -->
